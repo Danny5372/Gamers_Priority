@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello :)</title>
+</head>
+<style>
+    body{
+        position: relative;;
+        background-color:black;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        top: 250px;
+    }
+    .hello, .hello2{
+        animation: hello 5s;
+        color: white;
+        margin: 0;
+        font-size: 25px;
+    }
+    @keyframes hello{
+        0% {opacity: 0;}
+        10% {opacity: 0;}
+        30% {opacity: 1;}
+        40% {opacity: 0;}
+        70% {opacity: 1;}
+        80%{opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .hello ::after{
+        content: "";
+        animation: hello-1 5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hello-1{
+        0% { content:"Hi"; }
+        39% { content:"Hi"; }
+        50%{content: "Welcome to my web";}
+        80%{content: "Welcome to my web";}
+        80.0000000005%{content: "";}
+        100% { content:""}
+    }
+    .hello a{
+        color: white;
+        text-decoration: none; 
+        animation: a 5s;
+        transition: scale 0.5s;        
+    }
+    .hello a:hover{
+        scale: 1;
+    }
+    @keyframes a{
+        0% {opacity: 0;}
+        10% {opacity: 0;}
+        30% {opacity: 0;}
+        40% {opacity: 0;}
+        70% {opacity: 0;}
+        80%{opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .hello2 ::after {
+        content: "";
+        text-decoration: none; 
+        animation: hello-2 5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hello-2{
+        0% { content:"There user"; }
+        39% { content:"There user"; }
+        50%{content: "Booting up...";}
+        80%{content: "Booting up...";}
+        80.0000000005%{content: "Your web is ready to use";}
+        100% { content:"Your web is ready to use"}
+    }
+</style>
+<body>
+    <div class="hello">
+        <p></p>
+        <a href="webentered.html">Click here</a>
+    </div>
+    <div class="hello2">
+        <p></p>
+    </div>
+</body>
+</html>

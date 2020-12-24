@@ -1,0 +1,86 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    animation: fade 0.5s;
+    background-color: black;
+}
+h1{
+    color: white;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.content img{
+    border: 5px solid black;
+    transition: all 0.5s;
+}
+.content a :hover{
+    transform: scale(1.10);
+}
+.sub-content img{
+    width: 75%;
+    margin-bottom: 50px;
+}
+.welcome{
+    background: black ;
+    color: white;
+}
+.sub-content img{
+    width: 50%;
+    height:50%;
+}
+.sub-content-amd{
+    background-image: url(img/amd-2.jpg);
+    position: relative;
+    left: 0;
+}
+.sub-content-intel{
+    background-image: url(img/intel-2.jpg);
+    position: relative;
+    right: 0;
+}
+.sub-content-nvidia{
+    background-image: url(img/nvidia-2.jpg);
+    position: relative;
+    left: 0;
+}
+.sub-content-razer{
+    margin-left: 50px;
+}
+.sub-content-msi{
+    margin-left: 50px;
+}
+.line-1,.line-2{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    position: relative;
+}
+.end a{
+    border: 5px solid white;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    font-size: 50px;
+}
+.end a:hover{
+    color: black;
+    background-color: white;
+    border: black;
+    transform: scale(1.15);
+}
+.details{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: row;
+}
+.details a{
+    text-decoration: underline;
+    color: white;
+}
+p {
+    color: white;
+}
